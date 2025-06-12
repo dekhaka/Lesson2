@@ -4,10 +4,11 @@ fun main() {
     val payOfEmployees = 30000
     val interns = 30
     val payOfInterns = 20000
+    val numberOfEmployees = 80
 
     val employeeExpenses = employees * payOfEmployees
     val totalExpenses = employeeExpenses + (interns * payOfInterns)
-    val averagePay = totalExpenses / 80
+    val averagePay = totalExpenses / numberOfEmployees
 
     println(employeeExpenses)
     println(totalExpenses)
