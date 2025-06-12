@@ -4,10 +4,11 @@ fun main() {
     val starMinute = 39
     val minuteOfRoads = 457
 
-    val translationIntoMinutes = startHours * 60 + starMinute
+    val translationIntoMinutes = startHours * AGE_OF_MINUTE + starMinute
     val minutesOfArrival = translationIntoMinutes + minuteOfRoads
-    val arrivalHours = minutesOfArrival / 60
-    val arrivalMinutes = minutesOfArrival % 60
+    val arrivalHours = minutesOfArrival / AGE_OF_MINUTE
+    val arrivalMinutes = minutesOfArrival % AGE_OF_MINUTE
 
     println("$arrivalHours:$arrivalMinutes")
 }
+const val AGE_OF_MINUTE = 60
